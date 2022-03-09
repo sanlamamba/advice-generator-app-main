@@ -1,0 +1,125 @@
+@import url("./reset.css");
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+  transform: scale(0.7);
+}
+a.customLink {
+  font-size: inherit;
+  color: white;
+  text-decoration: inherit;
+}
+
+a.customLink:hover {
+  color: var(--cyan);
+  transition: 0.2s ease-in;
+}
+.card__container {
+  width: 100%;
+  max-width: calc(300px + var(--font-size));
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px -50px rgba(0, 0, 0, 1);
+}
+
+.card__container > img {
+  width: 100%;
+}
+
+.card__stats_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px 20px;
+}
+.card__stats_container > * {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card__stats_title {
+  font-size: 0.8em;
+  color: var(--cyan);
+  font-weight: 600;
+}
+.card__stats_title::after {
+  content: "ETH";
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  padding: 0px 2px;
+}
+.card__text_container > * {
+  color: var(--white);
+}
+.card__text_title {
+  font-weight: 600;
+  padding: 15px 0px;
+}
+
+.card__timer_title {
+  color: var(--soft-blue);
+  font-size: 0.8em;
+}
+
+.card__text_desc {
+  font-weight: 300;
+  font-size: 0.9em;
+  line-height: 1.75;
+  color: var(--soft-blue);
+}
+hr {
+  background-color: var(--line);
+  color: var(--line);
+  height: 1px;
+}
+.card__author_container {
+  padding: 15px 2px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.card__author_img {
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.card__author_tag {
+  color: var(--soft-blue);
+  font-size: 0.8em;
+}
+
+.card__image_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100% 100%;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.card__image_transition:hover {
+  opacity: 1;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.card__mainImg {
+  width: 100%;
+}
+.card__image_transition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00fff790;
+  transform: translateX(-100%);
+  opacity: 0;
+}
