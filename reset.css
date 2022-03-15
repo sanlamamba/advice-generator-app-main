@@ -9,21 +9,18 @@
   /* border: 1px solid red; */
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap");
 :root {
-  --bg: hsl(217, 54%, 11%);
-  --card-bg: hsl(216, 50%, 16%);
-  --line: hsl(215, 32%, 27%);
-  --white: #fff;
-
-  --cyan: hsl(178, 100%, 50%);
-  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --gray-blue: hsl(217, 19%, 38%);
+  --dark-gray-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
 
   --mobile-bp: 375px;
   --desktop-bp: 1440px;
 
   --font-size: 18px;
 
-  --font-family: "Outfit", sans-serif;
+  --font-family: "Manrope", sans-serif;
 }
